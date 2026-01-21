@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Elms Sans;
+}
+
+body{
+    background-image: url(images/bgImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input-container{
+    height: 200px;
+    width: 700px;
+    background-color: rgba(254, 254, 254, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-top: 300px;
+}
+
+input{
+    width: 500px;
+    height: 10px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 3px;
+    border: 2px;
+    box-shadow: 5px 5px 10px black;
+    font-weight: 500;
+}
+
+button{
+    width: 130px;
+    height: 30px;
+    padding: 5px;
+    font-size: 15px;
+    background-color: rgb(18, 7, 70);
+    color: cornsilk;
+    border: 2px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+    font-weight: 600;
+}
+
+.output-container{
+    height: 600px;
+    width: 500px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    /* background-color: rgba(254, 254, 254, 0.5); */
+    margin-top: 50px;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#cname{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.temp-container{
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+#temp{
+    font-size: 80px;
+    font-weight: 700;
+}
+
+#info{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.display-temp{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.humid-wind{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}

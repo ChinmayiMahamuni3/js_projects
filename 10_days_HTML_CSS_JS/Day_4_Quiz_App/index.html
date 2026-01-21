@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <h1>Quiz App</h1>
+    <div class="instruction-box" id="instruction-box">
+        <h2>Instructions</h2>
+        <hr>
+        <ul>
+            <li>This quiz contains 10 multiple-choice questions.</li>
+            <li>Each correct answer gives you 1 point.</li>
+            <li>Your total score will be displayed at the end of the quiz.</li>
+            <li>You can restart the quiz once you finish it.</li>
+        </ul>
+        <p>Have fun and test your knowledge of HTML, CSS, and JavaScript!</p>
+        <button id="start-quiz">Start Quiz</button>
+    </div>
+    <div class="quiz-box">
+        <div class="question-box">
+            <p id="question"></p>
+        </div>
+        <div class="options-box">
+            <label><input type="radio" name="options" id="op2" value="0"> <span id="op1Text"></span></label> <br><br>
+            <label><input type="radio" name="options" id="op3" value="1"> <span id="op2Text"></span></label> <br><br>
+            <label><input type="radio" name="options" id="op4" value="2"> <span id="op3Text"></span></label> <br><br>
+            <label><input type="radio" name="options" id="op1" value="3"> <span id="op4Text"></span></label> <br><br>
+        </div>
+        <button id="next-btn">Next</button>
+    </div>
+    <div class="result-box">
+        <p>Score</p>
+        <p id="result"></p>
+        <button id="restart-btn">Restart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

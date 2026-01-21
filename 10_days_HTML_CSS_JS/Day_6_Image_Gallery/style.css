@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 50px;
+}
+
+.gallery{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    position: absolute;
+    gap: 20px;
+}
+
+img{
+    height: 200px;
+    width: 290px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.modal-container{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none; 
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+}
+@keyframes zooomIn {
+    from { transform:scale(0.6);};
+    to { transform:scale(1);}
+}
+#modal-image{
+    height: 80%;
+    width: 85vw;
+    object-fit: contain;
+    border-radius: 20px;
+    position: fixed;
+    animation: zoomIn 0.5s;
+}
