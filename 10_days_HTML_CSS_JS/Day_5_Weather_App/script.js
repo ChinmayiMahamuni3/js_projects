@@ -24,7 +24,7 @@ btn.addEventListener('click',function(){
     let wind = document.getElementById('wind')
 
     async function getData(){
-        let response = await fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityName.value+'&appid=a4d9b1fce934d428f951f1d2125a05cf&units=metric')
+        let response = await fetch('Your weather api')
         let data = await response.json()
 
         city.textContent = cityName.value.charAt(0).toUpperCase()+ cityName.value.slice(1);
